@@ -52,13 +52,15 @@ cp -a lib/* $RPM_BUILD_ROOT%{ruby_rubylibdir}
 cp -a ri/* $RPM_BUILD_ROOT%{ruby_ridir}
 cp -a rdoc $RPM_BUILD_ROOT%{ruby_rdocdir}/%{name}-%{version}
 
+mv -f $RPM_BUILD_ROOT%{ruby_rubylibdir}/lockfile{-%{version},}.rb
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
 %doc README
-%{ruby_rubylibdir}
+%{ruby_rubylibdir}/lockfile.rb
 
 %files rdoc
 %defattr(644,root,root,755)
