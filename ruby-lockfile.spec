@@ -54,4 +54,4 @@ rm -rf $RPM_BUILD_ROOT
 %files rdoc
 %defattr(644,root,root,755)
 %{ruby_rdocdir}/%{name}-%{version}
-%{ruby_ridir}
+%{ruby_ridir}/Lockfile
