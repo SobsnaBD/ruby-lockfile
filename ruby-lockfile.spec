@@ -48,10 +48,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%{ruby_rubylibdir}
 %doc README
 
 %files rdoc
 %defattr(644,root,root,755)
 %{ruby_rdocdir}/%{name}-%{version}
-%{ruby_rubylibdir}
 %{ruby_ridir}
