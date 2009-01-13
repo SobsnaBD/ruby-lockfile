@@ -18,7 +18,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_enable_debug_packages	0
 
 %description
-...
+A ruby library for creating NFS safe lockfiles.
 
 %package rdoc
 Summary:	Documentation files for ruby-lockfile
