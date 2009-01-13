@@ -1,11 +1,12 @@
-Summary:	A ruby library for creating NFS safe lockfiles
+Summary:	A Ruby library for creating NFS safe lockfiles
+Summary(pl.UTF-8):	Biblioteka języka Ruby do tworzenia plików blokad bezpiecznych na NFS-ie
 Name:		ruby-lockfile
 Version:	1.4.3
 Release:	0.1
 License:	Ruby License
+Group:		Development/Languages
 Source0:	http://rubyforge.org/frs/download.php/18699/lockfile-%{version}.tgz
 # Source0-md5:	54b3ce6a1f5b2ec4c96dfc954b33fa86
-Group:		Development/Languages
 URL:		http://rubyforge.org/projects/codeforpeople/
 BuildRequires:	rpmbuild(macros) >= 1.484
 BuildRequires:	ruby >= 1:1.8.6
@@ -18,15 +19,23 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_enable_debug_packages	0
 
 %description
-A ruby library for creating NFS safe lockfiles.
+A Ruby library for creating NFS safe lockfiles.
+
+%description -l pl.UTF-8
+Biblioteka języka Ruby do tworzenia plików blokad bezpiecznych także
+na systemie plików NFS.
 
 %package rdoc
 Summary:	Documentation files for ruby-lockfile
+Summary(pl.UTF-8):	Pliki dokumentacji do biblioteki ruby-lockfile
 Group:		Documentation
 Requires:	ruby >= 1:1.8.7-4
 
 %description rdoc
 Documentation files for ruby-lockfile.
+
+%description rdoc -l pl.UTF-8
+Pliki dokumentacji do biblioteki ruby-lockfile.
 
 %prep
 %setup -q -n lockfile-%{version}
